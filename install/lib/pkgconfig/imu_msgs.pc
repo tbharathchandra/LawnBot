@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/install
+
+Name: imu_msgs
+Description: Description of imu_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
