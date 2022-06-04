@@ -1,5 +1,5 @@
 #include "Arduino.h"
-#include "Motor.h"
+#include "motor.h"
 
 
 Motor::Motor(int r_pwm, int l_pwm, int c_a, int c_b) {

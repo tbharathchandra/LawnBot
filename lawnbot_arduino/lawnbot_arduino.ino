@@ -1,4 +1,4 @@
-#include "Motor.h"
+#include "motor.h"
 #include <PID_v1.h>
 
 #include <ros.h>
@@ -17,8 +17,8 @@ Motor left(5,6,3,4);
 volatile long encoder0Pos = 0;    // Left wheel encoder count
 volatile long encoder1Pos = 0;    //  Right wheel encoder count
 
-double left_kp = 39 , left_ki = 0 , left_kd = 0.0;             // modify for optimal performance
-double right_kp = 34 , right_ki = 0 , right_kd = 0.0;
+double left_kp = 22 , left_ki = 0 , left_kd = 0.0;             // modify for optimal performance
+double right_kp = 38 , right_ki = 0 , right_kd = 0.0;
 
 double right_input = 0, right_output = 0, right_setpoint = 0;
 PID rightPID(&right_input, &right_output, &right_setpoint, right_kp, right_ki, right_kd, DIRECT);  

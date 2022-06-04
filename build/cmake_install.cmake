@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bharath/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/bharath/catkin_ws/build/lawn_bot/cmake_install.cmake")
   include("/home/bharath/catkin_ws/build/rosserial/rosserial/cmake_install.cmake")
   include("/home/bharath/catkin_ws/build/rosserial/rosserial_arduino/cmake_install.cmake")
   include("/home/bharath/catkin_ws/build/rosserial/rosserial_chibios/cmake_install.cmake")
