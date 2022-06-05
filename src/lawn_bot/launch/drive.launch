@@ -1,9 +1,6 @@
 <launch>
-    <rosparam param="ticks_meter">25312</rosparam>
 
-    <node pkg="differential_drive" type="diff_tf.py" name="diff_tf" output="screen">
-        <rosparam param="ticks_meter">25312</rosparam>
-        <rosparam param="base_width">0.3525</rosparam>
+    <node pkg="lawn_bot" type="differential_tf.py" name="differential_tf">
     </node>
 
     <node pkg="rosserial_python" type="serial_node.py" name="serial_node">

@@ -80,6 +80,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/bharath/catkin_ws/src/lawn_bot/CMakeLists.txt"
   "/home/bharath/catkin_ws/src/lawn_bot/package.xml"
   "/home/bharath/catkin_ws/src/lawn_bot/scripts/differential_tf.py"
+  "/home/bharath/catkin_ws/src/lawn_bot/scripts/robot_controller.py"
   "/home/bharath/catkin_ws/src/mpu6050/CMakeLists.txt"
   "/home/bharath/catkin_ws/src/mpu6050/package.xml"
   "/home/bharath/catkin_ws/src/rosserial/rosserial/CMakeLists.txt"

@@ -56,3 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/lawn_bot" TYPE PROGRAM FILES "/home/bharath/catkin_ws/build/lawn_bot/catkin_generated/installspace/differential_tf.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/lawn_bot" TYPE PROGRAM FILES "/home/bharath/catkin_ws/build/lawn_bot/catkin_generated/installspace/robot_controller.py")
+endif()
+
