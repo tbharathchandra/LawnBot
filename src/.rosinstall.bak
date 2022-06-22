@@ -1,0 +1,3 @@
+- git:
+    local-name: polygon_coverage_planning
+    uri: git@github.com:ethz-asl/polygon_coverage_planning.git
