@@ -22,9 +22,9 @@ echo_and_run mkdir -p "$DESTDIR/home/bharath/catkin_ws/install/lib/python3/dist-
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/bharath/catkin_ws/install/lib/python3/dist-packages:/home/bharath/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/bharath/catkin_ws/build" \
-    "/usr/bin/python3" \
+    PYTHONPATH="/home/bharath/catkin_ws/install/lib/python3/dist-packages:/home/bharath/catkin_ws/build/nmea_navsat_driver/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/bharath/catkin_ws/build/nmea_navsat_driver" \
+    "/bin/python3" \
     "/home/bharath/catkin_ws/src/nmea_navsat_driver/setup.py" \
      \
     build --build-base "/home/bharath/catkin_ws/build/nmea_navsat_driver" \

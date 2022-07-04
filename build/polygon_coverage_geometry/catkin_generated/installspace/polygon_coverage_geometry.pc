@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/install
+
+Name: polygon_coverage_geometry
+Description: Description of polygon_coverage_geometry
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpolygon_coverage_geometry
+Requires: cgal_catkin rosconsole roslib polygon_coverage_solvers

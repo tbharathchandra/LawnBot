@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/clear_costmap_recovery/lib/pkgconfig/clear_costmap_recovery.pc

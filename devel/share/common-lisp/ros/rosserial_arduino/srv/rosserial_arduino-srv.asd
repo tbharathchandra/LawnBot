@@ -1,9 +1,1 @@
-
-(cl:in-package :asdf)
-
-(defsystem "rosserial_arduino-srv"
-  :depends-on (:roslisp-msg-protocol :roslisp-utils )
-  :components ((:file "_package")
-    (:file "Test" :depends-on ("_package_Test"))
-    (:file "_package_Test" :depends-on ("_package"))
-  ))
+/home/bharath/catkin_ws/devel/.private/rosserial_arduino/share/common-lisp/ros/rosserial_arduino/srv/rosserial_arduino-srv.asd

@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  srv: require('./srv/_index.js')
-};
+/home/bharath/catkin_ws/devel/.private/mpu6050/share/gennodejs/ros/mpu6050/_index.js

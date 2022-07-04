@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/share/common-lisp/ros/imu_msgs/msg/Angle.lisp"
+  "/home/bharath/catkin_ws/devel/.private/imu_msgs/share/common-lisp/ros/imu_msgs/msg/Angle.lisp"
   "CMakeFiles/imu_msgs_generate_messages_lisp"
 )
 

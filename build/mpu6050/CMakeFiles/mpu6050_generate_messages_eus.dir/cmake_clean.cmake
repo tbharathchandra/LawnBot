@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/share/roseus/ros/mpu6050/manifest.l"
-  "/home/bharath/catkin_ws/devel/share/roseus/ros/mpu6050/srv/ResetIMU.l"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/share/roseus/ros/mpu6050/manifest.l"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/share/roseus/ros/mpu6050/srv/ResetIMU.l"
   "CMakeFiles/mpu6050_generate_messages_eus"
 )
 

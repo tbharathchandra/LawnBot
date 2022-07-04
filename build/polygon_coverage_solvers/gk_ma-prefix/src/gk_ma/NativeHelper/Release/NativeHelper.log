@@ -1,0 +1,22 @@
+﻿Build started 05/09/2014 13:26:04.
+     1>Project "C:\Users\dxk\Downloads\gtsp_ma_source_codes\NativeHelper\NativeHelper.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D NATIVEHELPER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NativeHelper.cpp
+         NativeHelper.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.dll) does not match the Linker's OutputFile property value (C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\NativeHelper.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\NativeHelper.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.lib" /MACHINE:X86 /SAFESEH /DLL Release\ClusterOptimisation.obj
+         Release\ImprovementManager.obj
+         Release\Insert.obj
+         Release\KOpt.obj
+         Release\NativeHelper.obj
+         Release\Swap.obj
+            Creating library C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.lib and object C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.exp
+         Generating code
+         Finished generating code
+         NativeHelper.vcxproj -> C:\Users\dxk\Downloads\gtsp_ma_source_codes\Release\NativeHelper.dll
+     1>Done Building Project "C:\Users\dxk\Downloads\gtsp_ma_source_codes\NativeHelper\NativeHelper.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.83

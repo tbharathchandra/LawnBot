@@ -1,8 +1,1 @@
-prefix=/home/bharath/catkin_ws/devel
-
-Name: lawn_bot
-Description: Description of lawn_bot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/pkgconfig/lawn_bot.pc

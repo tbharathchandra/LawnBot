@@ -1,10 +1,1 @@
-(cl:defpackage rosserial_msgs-srv
-  (:use )
-  (:export
-   "REQUESTPARAM"
-   "<REQUESTPARAM-REQUEST>"
-   "REQUESTPARAM-REQUEST"
-   "<REQUESTPARAM-RESPONSE>"
-   "REQUESTPARAM-RESPONSE"
-  ))
-
+/home/bharath/catkin_ws/devel/.private/rosserial_msgs/share/common-lisp/ros/rosserial_msgs/srv/_package.lisp

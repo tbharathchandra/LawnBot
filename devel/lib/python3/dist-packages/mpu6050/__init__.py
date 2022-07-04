@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/mpu6050/lib/python3/dist-packages/mpu6050/__init__.py

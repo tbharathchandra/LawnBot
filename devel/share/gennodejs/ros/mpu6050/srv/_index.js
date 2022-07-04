@@ -1,8 +1,1 @@
-
-"use strict";
-
-let ResetIMU = require('./ResetIMU.js')
-
-module.exports = {
-  ResetIMU: ResetIMU,
-};
+/home/bharath/catkin_ws/devel/.private/mpu6050/share/gennodejs/ros/mpu6050/srv/_index.js

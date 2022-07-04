@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/CMakeFiles/cgal"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/CMakeFiles/cgal.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/CMakeFiles/cgal-complete.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-install.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-mkdir.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-download.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-update.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-patch.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-configure.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/cgal_catkin/cgal-prefix/src/cgal-stamp/cgal-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cgal"
+		],
+		"name" : "cgal"
+	}
+}

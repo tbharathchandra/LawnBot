@@ -7,10 +7,17 @@
         <param name="port" value="/dev/ttyACM0"/>
     </node>
 
-    <!-- odom to base_link transform -->
-    <node pkg="lawn_bot" type="differential_tf.py" name="differential_tf"> 
-    </node>
+    <!--Publishes /odom from wheels-->
+    <node pkg="lawn_bot" type="differential_tf.py" name="differential_tf" /> 
+    <!--Publishes /imu/data from IMU MPU6050-->
+    <include file="$(find mpu6050)/launch/mpu6050.launch" />
 
-    <include file="$(find lawn_bot)/launch/map_server.launch" />
+    <node pkg="tf" type="static_transform_publisher" name="base_to_imu" args="0 0 0 0 0 0 base_link imu_link 200" />
+
+    <!--Fuses imu and wheel encoder odometry data-->
+    <include file="$(find lawn_bot)/launch/ekf_localization.launch" />
+
+
+    <include file="$(find lawn_bot)/launch/coverage_planner.launch" />
     
 </launch>

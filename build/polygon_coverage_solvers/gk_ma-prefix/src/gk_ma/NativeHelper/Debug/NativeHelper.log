@@ -1,0 +1,27 @@
+﻿Build started 05/09/2014 12:06:00.
+     1>Project "C:\Users\dxk\Downloads\gtsp_ma_source_codes\NativeHelper\NativeHelper.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NATIVEHELPER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ClusterOptimisation.cpp ImprovementManager.cpp Insert.cpp KOpt.cpp NativeHelper.cpp Swap.cpp
+         ClusterOptimisation.cpp
+         ImprovementManager.cpp
+         Insert.cpp
+         KOpt.cpp
+         NativeHelper.cpp
+         Swap.cpp
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.dll) does not match the Linker's OutputFile property value (C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\NativeHelper.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\NativeHelper.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.lib" /MACHINE:X86 /SAFESEH /DLL Debug\ClusterOptimisation.obj
+         Debug\ImprovementManager.obj
+         Debug\Insert.obj
+         Debug\KOpt.obj
+         Debug\NativeHelper.obj
+         Debug\Swap.obj
+     1>ClusterOptimisation.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.lib and object C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.exp
+         NativeHelper.vcxproj -> C:\Users\dxk\Downloads\gtsp_ma_source_codes\Debug\NativeHelper.dll
+     1>Done Building Project "C:\Users\dxk\Downloads\gtsp_ma_source_codes\NativeHelper\NativeHelper.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.81

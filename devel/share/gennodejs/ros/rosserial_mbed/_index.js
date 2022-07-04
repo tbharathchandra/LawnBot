@@ -1,7 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-  srv: require('./srv/_index.js')
-};
+/home/bharath/catkin_ws/devel/.private/rosserial_mbed/share/gennodejs/ros/rosserial_mbed/_index.js

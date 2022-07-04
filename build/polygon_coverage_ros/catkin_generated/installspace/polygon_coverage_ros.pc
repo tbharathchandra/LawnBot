@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/install
+
+Name: polygon_coverage_ros
+Description: Description of polygon_coverage_ros
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpolygon_coverage_ros
+Requires: rviz_polygon_tool roscpp nav_msgs geometry_msgs trajectory_msgs visualization_msgs std_srvs eigen_conversions polygon_coverage_msgs polygon_coverage_geometry polygon_coverage_planners cgal_catkin

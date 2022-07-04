@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/install
+
+Name: polygon_coverage_msgs
+Description: Description of polygon_coverage_msgs
+Version: 3.3.2
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpolygon_coverage_msgs
+Requires: message_generation message_runtime geometry_msgs std_msgs trajectory_msgs xmlrpcpp polygon_coverage_geometry

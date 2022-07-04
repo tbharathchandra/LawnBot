@@ -1,0 +1,3 @@
+repository='external project URL'
+module='http://www.cs.nott.ac.uk/~dxk/gtsplib/InstancesBinary.zip;https://polybox.ethz.ch/index.php/s/51iqurpOOQ5cVaJ/download'
+tag='MD5=255831bd47de71df8419a54741f0a6be'

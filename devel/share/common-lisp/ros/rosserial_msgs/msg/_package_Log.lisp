@@ -1,6 +1,1 @@
-(cl:in-package rosserial_msgs-msg)
-(cl:export '(LEVEL-VAL
-          LEVEL
-          MSG-VAL
-          MSG
-))
+/home/bharath/catkin_ws/devel/.private/rosserial_msgs/share/common-lisp/ros/rosserial_msgs/msg/_package_Log.lisp

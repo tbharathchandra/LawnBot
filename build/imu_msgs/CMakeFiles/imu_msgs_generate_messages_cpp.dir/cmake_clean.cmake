@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/include/imu_msgs/Angle.h"
+  "/home/bharath/catkin_ws/devel/.private/imu_msgs/include/imu_msgs/Angle.h"
   "CMakeFiles/imu_msgs_generate_messages_cpp"
 )
 

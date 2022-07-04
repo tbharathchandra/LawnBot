@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/base_local_planner
+
+Name: base_local_planner
+Description: Description of base_local_planner
+Version: 1.17.1
+Cflags: -I/home/bharath/catkin_ws/devel/.private/base_local_planner/include -I/home/bharath/catkin_ws/src/navigation/base_local_planner/include
+Libs: -L${prefix}/lib -lbase_local_planner -ltrajectory_planner_ros
+Requires: angles costmap_2d dynamic_reconfigure geometry_msgs message_runtime nav_core nav_msgs pluginlib roscpp sensor_msgs std_msgs tf2 tf2_ros voxel_grid

@@ -1,0 +1,9 @@
+[31m[1mCMake Error[0m at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:224 (message):
+  catkin_package() DEPENDS on the catkin package 'polygon_coverage_planning'
+  which must therefore be listed as a run dependency in the package.xml
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  CMakeLists.txt:101 (catkin_package)
+
+
+make: *** [Makefile:334: cmake_check_build_system] Error 1

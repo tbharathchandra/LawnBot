@@ -1,10 +1,1 @@
-(cl:defpackage mpu6050-srv
-  (:use )
-  (:export
-   "RESETIMU"
-   "<RESETIMU-REQUEST>"
-   "RESETIMU-REQUEST"
-   "<RESETIMU-RESPONSE>"
-   "RESETIMU-RESPONSE"
-  ))
-
+/home/bharath/catkin_ws/devel/.private/mpu6050/share/common-lisp/ros/mpu6050/srv/_package.lisp

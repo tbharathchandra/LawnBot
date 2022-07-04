@@ -1,8 +1,1 @@
-
-"use strict";
-
-let Adc = require('./Adc.js');
-
-module.exports = {
-  Adc: Adc,
-};
+/home/bharath/catkin_ws/devel/.private/rosserial_arduino/share/gennodejs/ros/rosserial_arduino/msg/_index.js

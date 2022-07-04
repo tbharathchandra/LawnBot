@@ -1,8 +1,1 @@
-
-"use strict";
-
-let RequestParam = require('./RequestParam.js')
-
-module.exports = {
-  RequestParam: RequestParam,
-};
+/home/bharath/catkin_ws/devel/.private/rosserial_msgs/share/gennodejs/ros/rosserial_msgs/srv/_index.js

@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/cgal_catkin/include/CGAL/Minkowski_sum_2/Decomposition_strategy_adapter.h

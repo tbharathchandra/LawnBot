@@ -1,0 +1,22 @@
+== CMake setup ==
+== CMake setup (DONE) ==
+
+== Setting paths ==
+== Setting paths (DONE) ==
+
+== Generate version files ==
+== Generate version files (DONE) ==
+
+== Detect external libraries ==
+== Detect external libraries (DONE) ==
+
+== Write compiler_config.h ==
+== Write compiler_config.h (DONE) ==
+
+== Generating build files ==
+Configuring libCGAL
+libCGAL is configured
+Configuring libCGAL_Core
+libCGAL_Core is configured
+== Generating build files (DONE) ==
+

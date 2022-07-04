@@ -1,7 +1,1 @@
-(cl:defpackage imu_msgs-msg
-  (:use )
-  (:export
-   "<ANGLE>"
-   "ANGLE"
-  ))
-
+/home/bharath/catkin_ws/devel/.private/imu_msgs/share/common-lisp/ros/imu_msgs/msg/_package.lisp

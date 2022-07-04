@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/cgal_catkin/include/CGAL/internal/disable_deprecation_warnings_and_errors.h

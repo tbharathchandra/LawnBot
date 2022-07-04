@@ -1,8 +1,0 @@
-prefix=/home/bharath/catkin_ws/devel
-
-Name: differential_drive
-Description: Description of differential_drive
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

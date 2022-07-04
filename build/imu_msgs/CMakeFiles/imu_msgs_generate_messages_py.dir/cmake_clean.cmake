@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/lib/python3/dist-packages/imu_msgs/msg/_Angle.py"
-  "/home/bharath/catkin_ws/devel/lib/python3/dist-packages/imu_msgs/msg/__init__.py"
+  "/home/bharath/catkin_ws/devel/.private/imu_msgs/lib/python3/dist-packages/imu_msgs/msg/_Angle.py"
+  "/home/bharath/catkin_ws/devel/.private/imu_msgs/lib/python3/dist-packages/imu_msgs/msg/__init__.py"
   "CMakeFiles/imu_msgs_generate_messages_py"
 )
 

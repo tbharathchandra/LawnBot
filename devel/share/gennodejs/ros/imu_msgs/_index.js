@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/bharath/catkin_ws/devel/.private/imu_msgs/share/gennodejs/ros/imu_msgs/_index.js

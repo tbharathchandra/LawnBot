@@ -1,0 +1,7 @@
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\GkMa.exe
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\bin\GkMa.pdb
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\GkMa\obj\Release\GkMa.Properties.Resources.resources
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\GkMa\obj\Release\GkMa.csproj.GenerateResource.Cache
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\GkMa\obj\Release\GkMa.exe
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\GkMa\obj\Release\GkMa.pdb
+C:\Users\dxk\Downloads\gtsp_ma_source_codes\GkMa\obj\Release\GkMa.csprojResolveAssemblyReference.cache

@@ -1,8 +1,1 @@
-prefix=/home/bharath/catkin_ws/devel
-
-Name: rosserial_xbee
-Description: Description of rosserial_xbee
-Version: 0.9.2
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/bharath/catkin_ws/devel/.private/rosserial_xbee/lib/pkgconfig/rosserial_xbee.pc

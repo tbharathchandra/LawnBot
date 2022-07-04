@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/bharath/catkin_ws/devel/.private/cgal_catkin;-DWITH_CGAL_Qt5:BOOL=OFF;-DWITH_CGAL_ImageIO:BOOL=OFF;-DCGAL_HEADER_ONLY=OFF;-DCMAKE_BUILD_TYPE:STRING=Release;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/map_msgs
+
+Name: map_msgs
+Description: Description of map_msgs
+Version: 1.14.1
+Cflags: -I/home/bharath/catkin_ws/devel/.private/map_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime nav_msgs sensor_msgs std_msgs

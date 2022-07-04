@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/cgal_catkin/include/CGAL/Surface_mesh_simplification/Detail/Edge_collapse_impl.h

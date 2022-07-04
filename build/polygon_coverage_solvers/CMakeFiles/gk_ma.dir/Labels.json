@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/CMakeFiles/gk_ma"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/CMakeFiles/gk_ma.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/CMakeFiles/gk_ma-complete.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-install.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-mkdir.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-download.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-update.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-patch.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-configure.rule"
+		},
+		{
+			"file" : "/home/bharath/catkin_ws/build/polygon_coverage_solvers/gk_ma-prefix/src/gk_ma-stamp/gk_ma-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gk_ma"
+		],
+		"name" : "gk_ma"
+	}
+}

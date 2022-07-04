@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/cgal_catkin
+
+Name: cgal_catkin
+Description: Description of cgal_catkin
+Version: 5.0.3
+Cflags: -I/home/bharath/catkin_ws/devel/.private/cgal_catkin/include
+Libs: -L${prefix}/lib -lcgal_catkin
+Requires: 

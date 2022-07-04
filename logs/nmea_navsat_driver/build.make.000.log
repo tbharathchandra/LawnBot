@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target nmea_navsat_driver_generate_virtualenv[0m
+[ 25%] [34m[1mGenerate virtualenv in /home/bharath/catkin_ws/build/nmea_navsat_driver/venv[0m
+True
+[ 50%] [34m[1mInstall requirements to /home/bharath/catkin_ws/build/nmea_navsat_driver/venv[0m
+[31mERROR: launchpadlib 1.10.13 requires testresources, which is not installed.[0m
+[ 75%] [34m[1mPrepare relocated virtualenvs for develspace and installspace[0m
+[100%] [34m[1mPer-package virtualenv target[0m
+[100%] Built target nmea_navsat_driver_generate_virtualenv

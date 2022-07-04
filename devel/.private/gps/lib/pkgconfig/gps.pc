@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/gps
+
+Name: gps
+Description: Description of gps
+Version: 1.0.0
+Cflags: -I/home/bharath/catkin_ws/devel/.private/gps/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime message_generation roscpp rospy std_msgs

@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/cgal_catkin/include/CGAL/HalfedgeDS_min_items.h

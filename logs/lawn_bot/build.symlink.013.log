@@ -1,0 +1,10 @@
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/pkgconfig/lawn_bot.pc, /home/bharath/catkin_ws/devel/lib/pkgconfig/lawn_bot.pc)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/cmake.lock, /home/bharath/catkin_ws/devel/lib/lawn_bot/cmake.lock)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/robot_controller.py, /home/bharath/catkin_ws/devel/lib/lawn_bot/robot_controller.py)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/move_base_sequence.py, /home/bharath/catkin_ws/devel/lib/lawn_bot/move_base_sequence.py)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/differential_tf.py, /home/bharath/catkin_ws/devel/lib/lawn_bot/differential_tf.py)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/waypoints_publisher.py, /home/bharath/catkin_ws/devel/lib/lawn_bot/waypoints_publisher.py)
+Symlinking /home/bharath/catkin_ws/devel/lib/lawn_bot/simple_sequencer.py
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/lib/lawn_bot/polygon_input.py, /home/bharath/catkin_ws/devel/lib/lawn_bot/polygon_input.py)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/share/lawn_bot/cmake/lawn_botConfig-version.cmake, /home/bharath/catkin_ws/devel/share/lawn_bot/cmake/lawn_botConfig-version.cmake)
+Linked: (/home/bharath/catkin_ws/devel/.private/lawn_bot/share/lawn_bot/cmake/lawn_botConfig.cmake, /home/bharath/catkin_ws/devel/share/lawn_bot/cmake/lawn_botConfig.cmake)

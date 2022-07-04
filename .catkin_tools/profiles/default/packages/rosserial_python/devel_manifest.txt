@@ -1,0 +1,9 @@
+rosserial/rosserial_python
+/home/bharath/catkin_ws/devel/.private/rosserial_python/cmake.lock /home/bharath/catkin_ws/devel/./cmake.lock
+/home/bharath/catkin_ws/devel/.private/rosserial_python/lib/pkgconfig/rosserial_python.pc /home/bharath/catkin_ws/devel/lib/pkgconfig/rosserial_python.pc
+/home/bharath/catkin_ws/devel/.private/rosserial_python/lib/rosserial_python/cmake.lock /home/bharath/catkin_ws/devel/lib/rosserial_python/cmake.lock
+/home/bharath/catkin_ws/devel/.private/rosserial_python/lib/rosserial_python/serial_node.py /home/bharath/catkin_ws/devel/lib/rosserial_python/serial_node.py
+/home/bharath/catkin_ws/devel/.private/rosserial_python/lib/rosserial_python/message_info_service.py /home/bharath/catkin_ws/devel/lib/rosserial_python/message_info_service.py
+/home/bharath/catkin_ws/devel/.private/rosserial_python/lib/python3/dist-packages/rosserial_python/__init__.py /home/bharath/catkin_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py
+/home/bharath/catkin_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake /home/bharath/catkin_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake
+/home/bharath/catkin_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake /home/bharath/catkin_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake

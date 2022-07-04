@@ -17,7 +17,7 @@ class DifferencialTf:
         rospy.loginfo("-I- %s started" % self.nodename)
 
         #Parameters
-        self.base_width = float(rospy.get_param('~base_width', 0.3525)) # The wheel base width in meters
+        self.base_width = float(rospy.get_param('~base_width', 0.3725)) # The wheel base width in meters
         self.base_frame_id = rospy.get_param('~base_frame_id','base_link') # the name of the base frame of the robot
         self.odom_frame_id = rospy.get_param('~odom_frame_id', 'odom') # the name of the odometry reference frame
 
@@ -35,7 +35,7 @@ class DifferencialTf:
         # subscriptions
         rospy.Subscriber("speed", Vector3Stamped, self.speedCallback)
         self.odomPub = rospy.Publisher("odom", Odometry, queue_size=10)
-        self.odomBroadcaster = TransformBroadcaster()
+        # self.odomBroadcaster = TransformBroadcaster()
 
         rospy.spin()
 
@@ -73,13 +73,14 @@ class DifferencialTf:
         quaternion.y = 0.0
         quaternion.z = sin( self.th / 2 )
         quaternion.w = cos( self.th / 2 )
-        self.odomBroadcaster.sendTransform(
-            (self.x, self.y, 0),
-            (quaternion.x, quaternion.y, quaternion.z, quaternion.w),
-            rospy.Time.now(),
-            self.base_frame_id,
-            self.odom_frame_id
-            )
+        # self.odomBroadcaster.sendTransform(
+        #     (self.x, self.y, 0),
+        #     (quaternion.x, quaternion.y, quaternion.z, quaternion.w),
+        #     rospy.Time.now(),
+        #     self.base_frame_id,
+        #     self.odom_frame_id
+        #     )
+        
         
         odom = Odometry()
         odom.header.stamp = rospy.Time.now()

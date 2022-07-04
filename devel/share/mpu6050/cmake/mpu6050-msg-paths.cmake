@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(mpu6050_MSG_INCLUDE_DIRS "")
-set(mpu6050_MSG_DEPENDENCIES std_msgs)
+/home/bharath/catkin_ws/devel/.private/mpu6050/share/mpu6050/cmake/mpu6050-msg-paths.cmake

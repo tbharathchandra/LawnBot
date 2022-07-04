@@ -1,0 +1,7 @@
+[01m[K/home/bharath/catkin_ws/src/mpu6050/src/mpu6050.cpp:[m[K In member function ‘[01m[Kvoid Mpu6050::InitVariable()[m[K’:
+[01m[K/home/bharath/catkin_ws/src/mpu6050/src/mpu6050.cpp:37:22:[m[K [01;35m[Kwarning: [m[Kiteration 3 invokes undefined behavior [[01;35m[K-Waggressive-loop-optimizations[m[K]
+   37 |     [01;35m[Kacceleration_[i] = 0.0[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/bharath/catkin_ws/src/mpu6050/src/mpu6050.cpp:35:17:[m[K [01;36m[Knote: [m[Kwithin this loop
+   35 |   for (int i=0;[01;36m[Ki<=3[m[K;i++)
+      |                [01;36m[K~^~~[m[K

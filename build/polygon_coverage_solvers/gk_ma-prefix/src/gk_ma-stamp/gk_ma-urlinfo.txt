@@ -1,0 +1,3 @@
+repository='external project URL'
+module='http://www.cs.nott.ac.uk/~pszdk/gtsp_ma_source_codes.zip;https://polybox.ethz.ch/index.php/s/H4NXeaNPWo6VBrf/download'
+tag='MD5=765fad8e3746fa3dd9b81be0afb34d35'

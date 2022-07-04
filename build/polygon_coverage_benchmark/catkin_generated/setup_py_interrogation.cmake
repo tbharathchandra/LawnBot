@@ -1,0 +1,7 @@
+set(polygon_coverage_benchmark_SETUP_PY_SETUP_MODULE "distutils.core")
+set(polygon_coverage_benchmark_SETUP_PY_VERSION "0.0.0")
+set(polygon_coverage_benchmark_SETUP_PY_SCRIPTS "scripts/plot_results")
+set(polygon_coverage_benchmark_SETUP_PY_PACKAGES "polygon_coverage_benchmark")
+set(polygon_coverage_benchmark_SETUP_PY_PACKAGE_DIRS "python/polygon_coverage_benchmark")
+set(polygon_coverage_benchmark_SETUP_PY_MODULES "")
+set(polygon_coverage_benchmark_SETUP_PY_MODULE_DIRS "")

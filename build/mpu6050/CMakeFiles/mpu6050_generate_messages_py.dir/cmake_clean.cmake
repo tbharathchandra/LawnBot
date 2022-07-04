@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/lib/python3/dist-packages/mpu6050/srv/_ResetIMU.py"
-  "/home/bharath/catkin_ws/devel/lib/python3/dist-packages/mpu6050/srv/__init__.py"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/lib/python3/dist-packages/mpu6050/srv/_ResetIMU.py"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/lib/python3/dist-packages/mpu6050/srv/__init__.py"
   "CMakeFiles/mpu6050_generate_messages_py"
 )
 

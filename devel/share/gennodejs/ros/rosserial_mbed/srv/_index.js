@@ -1,8 +1,1 @@
-
-"use strict";
-
-let Test = require('./Test.js')
-
-module.exports = {
-  Test: Test,
-};
+/home/bharath/catkin_ws/devel/.private/rosserial_mbed/share/gennodejs/ros/rosserial_mbed/srv/_index.js

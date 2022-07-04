@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/share/gennodejs/ros/imu_msgs/msg/Angle.js"
+  "/home/bharath/catkin_ws/devel/.private/imu_msgs/share/gennodejs/ros/imu_msgs/msg/Angle.js"
   "CMakeFiles/imu_msgs_generate_messages_nodejs"
 )
 

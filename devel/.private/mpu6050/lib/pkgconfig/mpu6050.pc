@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/mpu6050
+
+Name: mpu6050
+Description: Description of mpu6050
+Version: 0.0.0
+Cflags: -I/home/bharath/catkin_ws/devel/.private/mpu6050/include -I/home/bharath/catkin_ws/src/mpu6050/include
+Libs: -L${prefix}/lib 
+Requires: roscpp message_runtime roscpp message_generation std_msgs imu_msgs

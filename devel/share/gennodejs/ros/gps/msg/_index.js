@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/gps/share/gennodejs/ros/gps/msg/_index.js

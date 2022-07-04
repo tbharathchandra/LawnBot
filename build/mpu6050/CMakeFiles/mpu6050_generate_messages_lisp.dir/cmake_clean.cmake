@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/share/common-lisp/ros/mpu6050/srv/ResetIMU.lisp"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/share/common-lisp/ros/mpu6050/srv/ResetIMU.lisp"
   "CMakeFiles/mpu6050_generate_messages_lisp"
 )
 

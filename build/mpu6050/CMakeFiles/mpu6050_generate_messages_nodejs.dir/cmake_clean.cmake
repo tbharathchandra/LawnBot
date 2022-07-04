@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/share/gennodejs/ros/mpu6050/srv/ResetIMU.js"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/share/gennodejs/ros/mpu6050/srv/ResetIMU.js"
   "CMakeFiles/mpu6050_generate_messages_nodejs"
 )
 

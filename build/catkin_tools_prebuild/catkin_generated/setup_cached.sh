@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+# generated from catkin/python/catkin/environment_cache.py
+
+# based on a snapshot of the environment before and after calling the setup script
+# it emulates the modifications of the setup script without recurring computations
+
+# new environment variables
+
+# modified environment variables
+export CMAKE_PREFIX_PATH="/home/bharath/catkin_ws/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PATH='/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/bharath/catkin_ws/build/catkin_tools_prebuild'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/bharath/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH='/home/bharath/catkin_ws/build/catkin_tools_prebuild:/home/bharath/catkin_ws/src/catkin_simple:/home/bharath/catkin_ws/src/cgal_catkin:/home/bharath/catkin_ws/src/navigation/fake_localization:/home/bharath/catkin_ws/src/imu_msgs:/home/bharath/catkin_ws/src/lawn_bot:/home/bharath/catkin_ws/src/navigation_msgs/map_msgs:/home/bharath/catkin_ws/src/navigation/map_server:/home/bharath/catkin_ws/src/navigation/amcl:/home/bharath/catkin_ws/src/navigation_msgs/move_base_msgs:/home/bharath/catkin_ws/src/mpu6050:/home/bharath/catkin_ws/src/navigation/navigation:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_benchmark:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_solvers:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_geometry:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_msgs:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_planners:/home/bharath/catkin_ws/src/polygon_coverage_planning/polygon_coverage_ros:/home/bharath/catkin_ws/src/rosserial/rosserial:/home/bharath/catkin_ws/src/rosserial/rosserial_arduino:/home/bharath/catkin_ws/src/rosserial/rosserial_chibios:/home/bharath/catkin_ws/src/rosserial/rosserial_mbed:/home/bharath/catkin_ws/src/rosserial/rosserial_msgs:/home/bharath/catkin_ws/src/rosserial/rosserial_client:/home/bharath/catkin_ws/src/rosserial/rosserial_embeddedlinux:/home/bharath/catkin_ws/src/rosserial/rosserial_python:/home/bharath/catkin_ws/src/rosserial/rosserial_server:/home/bharath/catkin_ws/src/rosserial/rosserial_test:/home/bharath/catkin_ws/src/rosserial/rosserial_tivac:/home/bharath/catkin_ws/src/rosserial/rosserial_vex_cortex:/home/bharath/catkin_ws/src/rosserial/rosserial_vex_v5:/home/bharath/catkin_ws/src/rosserial/rosserial_windows:/home/bharath/catkin_ws/src/rosserial/rosserial_xbee:/home/bharath/catkin_ws/src/polygon_coverage_planning/rviz_polygon_tool:/home/bharath/catkin_ws/src/navigation/voxel_grid:/home/bharath/catkin_ws/src/navigation/costmap_2d:/home/bharath/catkin_ws/src/navigation/nav_core:/home/bharath/catkin_ws/src/navigation/base_local_planner:/home/bharath/catkin_ws/src/navigation/carrot_planner:/home/bharath/catkin_ws/src/navigation/clear_costmap_recovery:/home/bharath/catkin_ws/src/navigation/dwa_local_planner:/home/bharath/catkin_ws/src/navigation/move_slow_and_clear:/home/bharath/catkin_ws/src/navigation/navfn:/home/bharath/catkin_ws/src/navigation/global_planner:/home/bharath/catkin_ws/src/navigation/rotate_recovery:/home/bharath/catkin_ws/src/navigation/move_base:/opt/ros/noetic/share'

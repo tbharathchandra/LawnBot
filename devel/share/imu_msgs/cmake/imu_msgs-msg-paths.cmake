@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(imu_msgs_MSG_INCLUDE_DIRS "/home/bharath/catkin_ws/src/imu_msgs/msg")
-set(imu_msgs_MSG_DEPENDENCIES std_msgs)
+/home/bharath/catkin_ws/devel/.private/imu_msgs/share/imu_msgs/cmake/imu_msgs-msg-paths.cmake

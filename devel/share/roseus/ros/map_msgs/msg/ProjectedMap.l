@@ -1,0 +1,1 @@
+/home/bharath/catkin_ws/devel/.private/map_msgs/share/roseus/ros/map_msgs/msg/ProjectedMap.l

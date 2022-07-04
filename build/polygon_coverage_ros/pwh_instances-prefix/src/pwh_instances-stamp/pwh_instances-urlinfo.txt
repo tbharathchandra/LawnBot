@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://polybox.ethz.ch/index.php/s/7J5HPRR6lM22TnK/download'
+tag='MD5=87b964a974f6a8dd174dfe393b631a61'

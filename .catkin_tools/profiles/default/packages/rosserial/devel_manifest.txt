@@ -1,0 +1,2 @@
+rosserial/rosserial
+/home/bharath/catkin_ws/devel/.private/rosserial/cmake.lock /home/bharath/catkin_ws/devel/./cmake.lock

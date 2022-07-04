@@ -13,6 +13,16 @@ Motor::Motor(int r_pwm, int l_pwm, int c_a, int c_b) {
   Motor::c_b = c_b;
 }
 
+Motor::Motor(int r_pwm, int l_pwm) {
+  pinMode(r_pwm,OUTPUT);
+  pinMode(l_pwm,OUTPUT);
+  Motor::r_pwm = r_pwm;
+  Motor::l_pwm = l_pwm;
+
+  Motor::c_a = -1;
+  Motor::c_b = -1;
+}
+
 void Motor::rotate(int value) {
   if(value>=0){
     int out = map(value, 0, 100, 0, 255);

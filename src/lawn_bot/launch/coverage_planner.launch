@@ -1,0 +1,5 @@
+<launch>
+  <node name="coverage_planner" pkg="polygon_coverage_ros" type="coverage_planner" output="screen" clear_params="true">
+    <rosparam command="load" file="$(find lawn_bot)/params/coverage_planner.yaml"/>
+  </node>
+</launch>

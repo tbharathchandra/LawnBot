@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/clear_costmap_recovery
+
+Name: clear_costmap_recovery
+Description: Description of clear_costmap_recovery
+Version: 1.17.1
+Cflags: -I/home/bharath/catkin_ws/src/navigation/clear_costmap_recovery/include
+Libs: -L${prefix}/lib -lclear_costmap_recovery
+Requires: costmap_2d nav_core pluginlib roscpp tf2_ros

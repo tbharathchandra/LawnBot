@@ -2,9 +2,16 @@ import rospy
 from nav_msgs.msg import Odometry
 from tf.transformations import euler_from_quaternion
 from geometry_msgs.msg import PointStamped, Twist
-from math import atan2
+from math import atan2, sqrt
+from std_msgs.msg import Bool
+
 
 class RobotController:
+
+    PI_IN_RADIANS = 3.14159
+    FOWARD_SPEED = 0.11 #in m/s
+    ROTATION_SPEED = 0.22
+
     def __init__(self):
         rospy.init_node("robot_controller")
         self.nodename = rospy.get_name()
@@ -15,37 +22,73 @@ class RobotController:
         self.odomTheta = 0
         self.goalX = None
         self.goalY = None
+        self.safety_stop = False
 
-        self.rate = rospy.Rate(1) # 1hz
+        self.rate = rospy.Rate(5) # 5hz
 
         # Subscribes
-        rospy.Subscriber("odom", Odometry, self.newOdom)
+        rospy.Subscriber("odometry/filtered", Odometry, self.newOdom)
         rospy.Subscriber("clicked_point", PointStamped, self.newGoal)
+        rospy.Subscriber("safety_stop", Bool, self.safetyCallback)
 
         # Publishes
         self.pub = rospy.Publisher("/cmd_vel", Twist, queue_size = 1)
 
+    def safetyCallback(self, msg):
+        self.safety_stop = msg.data
 
     def updateTwist(self):
         
         if(self.goalX == None or self.goalY == None):
             return
+        
 
         speed = Twist()
 
         inc_x = self.goalX - self.odomX
         inc_y = self.goalY - self.odomY
 
-        angle_to_goal = atan2(inc_y, inc_x)
+        # Calculating the cartesian distance between current and goal point
+        distance = abs(sqrt((inc_x*inc_x) + (inc_y*inc_y)))
 
-        if abs(angle_to_goal - self.odomTheta) > 0.1:
+        angle_to_goal = atan2(inc_y, inc_x)
+        # rospy.loginfo("angle to goal: " + str(angle_to_goal) + "-- yaw theta: " + str(self.odomTheta))
+        if self.safety_stop or distance < 0.1:
+            self.pub.publish(speed)
+            return
+
+        if self.angleBetween(angle_to_goal, self.odomTheta) > 0.15:
             speed.linear.x = 0.0
-            speed.angular.z = 0.3
+            if (angle_to_goal > 0 and self.odomTheta > 0) or (angle_to_goal < 0 and self.odomTheta < 0):
+                if (angle_to_goal > self.odomTheta):
+                    speed.angular.z = self.ROTATION_SPEED
+                else:
+                    speed.angular.z = -self.ROTATION_SPEED
+            elif (angle_to_goal > 0 and self.odomTheta < 0) or (angle_to_goal < 0 and self.odomTheta > 0):
+                if self.odomTheta > self.complimentaryAngle(angle_to_goal):
+                    speed.angular.z = self.ROTATION_SPEED
+                else:
+                    speed.angular.z = -self.ROTATION_SPEED
+            else: 
+                speed.angular.z = self.ROTATION_SPEED
+
         else:
-            speed.linear.x = 0.5
+            speed.linear.x = self.FOWARD_SPEED
             speed.angular.z = 0.0
 
         self.pub.publish(speed)
+
+    def complimentaryAngle(self, angle):
+        if (angle > 0):
+            return -(self.PI_IN_RADIANS - angle)
+        else:
+            return (self.PI_IN_RADIANS - angle)
+
+    def angleBetween(self, angle_to_goal, odomTheta):
+        angle = abs(angle_to_goal - odomTheta)
+        if angle > self.PI_IN_RADIANS:
+            angle = (2*self.PI_IN_RADIANS) - angle
+        return angle
 
     def newOdom(self, msg):
         self.odomX = msg.pose.pose.position.x
@@ -64,7 +107,7 @@ class RobotController:
         while not rospy.is_shutdown():
             self.updateTwist()
 
-            # Sleeps @ rate "1 loop/second"
+            # Sleeps @ rate "5 loop/second"
             self.rate.sleep()
 
     

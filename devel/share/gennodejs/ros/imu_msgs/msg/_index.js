@@ -1,8 +1,1 @@
-
-"use strict";
-
-let Angle = require('./Angle.js');
-
-module.exports = {
-  Angle: Angle,
-};
+/home/bharath/catkin_ws/devel/.private/imu_msgs/share/gennodejs/ros/imu_msgs/msg/_index.js

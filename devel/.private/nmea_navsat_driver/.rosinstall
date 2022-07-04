@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bharath/catkin_ws/devel/.private/nmea_navsat_driver/setup.sh

@@ -1,0 +1,31 @@
+[  0%] Built target _map_msgs_generate_messages_check_deps_SaveMap
+[  0%] Built target _map_msgs_generate_messages_check_deps_ProjectedMapsInfo
+[  0%] Built target _map_msgs_generate_messages_check_deps_GetPointMap
+[  0%] Built target _map_msgs_generate_messages_check_deps_GetMapROI
+[  0%] Built target _map_msgs_generate_messages_check_deps_ProjectedMap
+[  0%] Built target _map_msgs_generate_messages_check_deps_ProjectedMapInfo
+[  0%] Built target _map_msgs_generate_messages_check_deps_OccupancyGridUpdate
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _map_msgs_generate_messages_check_deps_PointCloud2Update
+[  0%] Built target _map_msgs_generate_messages_check_deps_GetPointMapROI
+[  0%] Built target _map_msgs_generate_messages_check_deps_SetMapProjections
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[ 35%] Built target map_msgs_generate_messages_lisp
+[ 41%] Built target map_msgs_generate_messages_py
+[ 79%] Built target map_msgs_generate_messages_nodejs
+[ 81%] Built target map_msgs_generate_messages_eus
+[100%] Built target map_msgs_generate_messages_cpp
+[100%] Built target map_msgs_generate_messages

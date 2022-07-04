@@ -1,0 +1,6 @@
+Symlinking /home/bharath/catkin_ws/devel/lib/pkgconfig/follow_waypoints.pc
+Symlinking /home/bharath/catkin_ws/devel/lib/follow_waypoints/cmake.lock
+Symlinking /home/bharath/catkin_ws/devel/lib/follow_waypoints/follow_waypoints
+Symlinking /home/bharath/catkin_ws/devel/lib/python3/dist-packages/follow_waypoints/__init__.py
+Symlinking /home/bharath/catkin_ws/devel/share/follow_waypoints/cmake/follow_waypointsConfig-version.cmake
+Symlinking /home/bharath/catkin_ws/devel/share/follow_waypoints/cmake/follow_waypointsConfig.cmake

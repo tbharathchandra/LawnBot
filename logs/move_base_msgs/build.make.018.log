@@ -1,0 +1,24 @@
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseGoal
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseFeedback
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_RecoveryStatus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseActionGoal
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseActionResult
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseResult
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseAction
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target _move_base_msgs_generate_messages_check_deps_MoveBaseActionFeedback
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[ 19%] Built target move_base_msgs_generate_messages_nodejs
+[ 38%] Built target move_base_msgs_generate_messages_lisp
+[ 59%] Built target move_base_msgs_generate_messages_eus
+[ 78%] Built target move_base_msgs_generate_messages_cpp
+[100%] Built target move_base_msgs_generate_messages_py
+[100%] Built target move_base_msgs_generate_messages

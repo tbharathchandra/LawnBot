@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/bharath/catkin_ws/devel/include/mpu6050/ResetIMU.h"
+  "/home/bharath/catkin_ws/devel/.private/mpu6050/include/mpu6050/ResetIMU.h"
   "CMakeFiles/mpu6050_generate_messages_cpp"
 )
 

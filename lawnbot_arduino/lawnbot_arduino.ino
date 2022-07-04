@@ -5,20 +5,26 @@
 #include <geometry_msgs/Twist.h>
 #include <geometry_msgs/Vector3Stamped.h>
 #include <ros/time.h>
+#include <std_msgs/Int32.h>
+#include <sensor_msgs/NavSatFix.h>
+#include <TinyGPS++.h>
 
 ros::NodeHandle  nh;
 
 
 #define LOOPTIME 10
 
-Motor right(10,11,2,7);
-Motor left(5,6,3,4);
+Motor right(9,8,2,4);
+Motor left(6,7,3,5);
+Motor cutting(11,10);
+
+TinyGPSPlus gps; // create gps object
 
 volatile long encoder0Pos = 0;    // Left wheel encoder count
 volatile long encoder1Pos = 0;    //  Right wheel encoder count
 
-double left_kp = 22 , left_ki = 0 , left_kd = 0.0;             // modify for optimal performance
-double right_kp = 38 , right_ki = 0 , right_kd = 0.0;
+double left_kp = 12 , left_ki = 0 , left_kd = 0.0;             // modify for optimal performance
+double right_kp = 14 , right_ki = 0 , right_kd = 0.0;
 
 double right_input = 0, right_output = 0, right_setpoint = 0;
 PID rightPID(&right_input, &right_output, &right_setpoint, right_kp, right_ki, right_kd, DIRECT);  
@@ -49,9 +55,18 @@ void cmd_vel_cb( const geometry_msgs::Twist& twist){
   demandz = twist.angular.z;
 }
 
+double cut_speed = 0;
+
+void cutting_callback(const std_msgs::Int32& cutting_speed){
+  cut_speed = cutting_speed.data;
+}
+
 ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", cmd_vel_cb );
+ros::Subscriber<std_msgs::Int32> cuttingSub("cutter", cutting_callback);
 geometry_msgs::Vector3Stamped speed_msg;                                //create a "speed_msg" ROS message
 ros::Publisher speed_pub("speed", &speed_msg);                          //create a publisher to ROS topic "speed" using the "speed_msg" type
+sensor_msgs::NavSatFix satFix;
+ros::Publisher gps_pub("gps/fix", &satFix);
 
 double speed_act_left = 0;                    //Actual speed for left wheel in m/s
 double speed_act_right = 0;  
@@ -60,9 +75,11 @@ double speed_act_right = 0;
 void setup() {
   nh.initNode();
   nh.subscribe(sub);
-  nh.advertise(speed_pub);       
+  nh.subscribe(cuttingSub);
+  nh.advertise(speed_pub);
+  nh.advertise(gps_pub);       
   
-//  Serial.begin(9600);
+  Serial3.begin(9600);
   rightPID.SetMode(AUTOMATIC);
   rightPID.SetSampleTime(1);
   rightPID.SetOutputLimits(-100, 100);
@@ -85,8 +102,8 @@ void loop() {
 //    demandx = sinv*0.08; // max speed = 0.144
 
 
-    demand_speed_left = demandx - (demandz*0.17625);
-    demand_speed_right = demandx + (demandz*0.17625);
+    demand_speed_left = demandx - (demandz*0.1925);
+    demand_speed_right = demandx + (demandz*0.1925);
 
     /*PID controller for speed control
       Base speed being 1 ms and the demand_speed variables controlling it at fractions of the base.
@@ -97,24 +114,24 @@ void loop() {
     
 
     /* 
-     *  Distance between wheels (L) = 0.3525 m
-     *  L/2 = 0.17625
+     *  Distance between wheels (L) = 0.383 m
+     *  L/2 = 0.1925
      *  Calculate right and left wheel speeds by encoder counts (used to publish odometry data)
-     *  Actual Encoded count (AEC) = delta encoder/gear ratio (506.25); no of revolutions =  AEC/CPR (22);
+     *  Actual Encoded count (AEC) = delta encoder/gear ratio (506.25); no of revolutions =  AEC/CPR (44);
      *  rps = no of rotations/delta time (10 ms = 10/1000); linear speed = rps X pi X dia(14cm = 0.14m);
-     *  Performing above calculations speed = delta encoder/295.4313631
+     *  Performing above calculations speed = delta encoder/506.4537653
     */ 
-    speed_act_left = encoder0Diff/253.22688;                    
-    speed_act_right = encoder1Diff/253.22688;
+    speed_act_left = encoder0Diff/506.4537653;                    
+    speed_act_right = encoder1Diff/506.4537653;
   
-    encoder0Error = (demand_speed_left*253.22688)-encoder0Diff; 
-    encoder1Error = (demand_speed_right*253.22688)-encoder1Diff;
+    encoder0Error = (demand_speed_left*506.4537653)-encoder0Diff; 
+    encoder1Error = (demand_speed_right*506.4537653)-encoder1Diff;
   
     encoder0Prev = encoder0Pos; // Saving values
     encoder1Prev = encoder1Pos;
   
-    left_setpoint = demand_speed_left*253.22688;  //Setting required speed as a mul/frac of 1 m/s
-    right_setpoint = demand_speed_right*253.22688;
+    left_setpoint = demand_speed_left*506.4537653;  //Setting required speed as a mul/frac of 1 m/s
+    right_setpoint = demand_speed_right*506.4537653;
   
     left_input = encoder0Diff;  //Input to PID controller is the current difference
     right_input = encoder1Diff;
@@ -128,8 +145,29 @@ void loop() {
 //    Serial.print(",");
 //    Serial.println(encoder1Pos);
   }
+  
+  cutting.rotate(cut_speed);
 
   publishSpeed(LOOPTIME);
+  
+//  satFix.header.stamp = nh.now(); 
+//  satFix.header.frame_id = "map";
+//  satFix.status.service = 1;
+//  satFix.status.status = -1;
+//  satFix.position_covariance_type = 0;
+//  if(Serial3.available()){
+//    gps.encode(Serial3.read());
+//    if (gps.location.isUpdated()) {
+//      satFix.latitude = gps.location.lat();
+//      satFix.longitude = gps.location.lng();
+//      satFix.altitude = gps.altitude.meters();
+//      satFix.status.status = 1;
+//      gps_pub.publish(&satFix);
+//    }    
+//  } else {
+//    gps_pub.publish(&satFix);
+//  }
+  
   nh.spinOnce();
 }
 

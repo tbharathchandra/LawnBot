@@ -68,7 +68,7 @@ set(lawn_bot_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(lawn_bot_SOURCE_PREFIX /home/bharath/catkin_ws/src/lawn_bot)
-  set(lawn_bot_DEVEL_PREFIX /home/bharath/catkin_ws/devel)
+  set(lawn_bot_DEVEL_PREFIX /home/bharath/catkin_ws/devel/.private/lawn_bot)
   set(lawn_bot_INSTALL_PREFIX "")
   set(lawn_bot_PREFIX ${lawn_bot_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bharath/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bharath/catkin_ws/install/lib;/home/bharath/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${lawn_bot_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "polygon_coverage_planning")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

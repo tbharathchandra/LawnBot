@@ -19,6 +19,7 @@ class Motor {
   public:
     
     Motor(int r_pwm, int l_pwm, int c_a, int c_b);
+    Motor(int r_pwm, int l_pwm);
     
     void rotate(int value);
     int r_pwm;

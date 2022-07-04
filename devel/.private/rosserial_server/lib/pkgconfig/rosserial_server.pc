@@ -1,0 +1,8 @@
+prefix=/home/bharath/catkin_ws/devel/.private/rosserial_server
+
+Name: rosserial_server
+Description: Description of rosserial_server
+Version: 0.9.2
+Cflags: -I/home/bharath/catkin_ws/src/rosserial/rosserial_server/include
+Libs: -L${prefix}/lib -lrosserial_server_lookup
+Requires: roscpp rosserial_msgs std_msgs topic_tools

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libCGAL.so.13 -o ../../../lib/libCGAL.so.13.0.3 CMakeFiles/CGAL.dir/all_files.cpp.o  /usr/lib/aarch64-linux-gnu/libmpfr.so /usr/lib/aarch64-linux-gnu/libgmp.so 

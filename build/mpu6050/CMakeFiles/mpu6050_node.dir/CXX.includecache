@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bharath/catkin_ws/devel/include/imu_msgs/Angle.h
+/home/bharath/catkin_ws/devel/.private/imu_msgs/include/imu_msgs/Angle.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bharath/catkin_ws/devel/include/mpu6050/ResetIMU.h
+/home/bharath/catkin_ws/devel/.private/mpu6050/include/mpu6050/ResetIMU.h
 ros/service_traits.h
 -
 mpu6050/ResetIMURequest.h
@@ -30,7 +30,7 @@ mpu6050/ResetIMURequest.h
 mpu6050/ResetIMUResponse.h
 -
 
-/home/bharath/catkin_ws/devel/include/mpu6050/ResetIMURequest.h
+/home/bharath/catkin_ws/devel/.private/mpu6050/include/mpu6050/ResetIMURequest.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bharath/catkin_ws/devel/include/mpu6050/ResetIMUResponse.h
+/home/bharath/catkin_ws/devel/.private/mpu6050/include/mpu6050/ResetIMUResponse.h
 string
 -
 vector

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/bharath/catkin_ws/devel/.private/move_base/setup.sh
